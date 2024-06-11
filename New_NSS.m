@@ -1,5 +1,9 @@
-function [ NSS ] = BCalCul_NSS(mag_grd,n,m,Xmin,Xmax,Ymin,Ymax,inc,dec,h)
+function [ NSS ] = BCalCul_NSS(mag_grd,n,m,Xmin,Xmax,Ymin,Ymax,h)
 %N-MNSS
+% mag_grd: magnetic data
+% n,m the row and col of the data
+% Xmin Xmax Ymin Ymax, the range of the data
+% h: upward height
 [n0,n1,n2,n3,dx] = Calculate_m1m2_dx(n,Xmin,Xmax);% x
 [m0,m1,m2,m3,dy] = Calculate_m1m2_dx(m,Ymin,Ymax); % y
 TMI = zeros(m3,n3);
