@@ -1,4 +1,4 @@
-function [ NSS ] = BCalCul_NSS(mag_grd,n,m,Xmin,Xmax,Ymin,Ymax,h)
+function [ NSS ] = New_NSS(mag_grd,n,m,Xmin,Xmax,Ymin,Ymax,h)
 %N-MNSS
 % mag_grd: magnetic data
 % n,m the row and col of the data
