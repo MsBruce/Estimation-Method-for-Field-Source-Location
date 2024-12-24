@@ -23,7 +23,7 @@ Sxz = zeros(m3,n3);
 Syy = zeros(m3,n3);
 Syz = zeros(m3,n3);
 Szz2 = zeros(m3,n3);
-jie = 0;
+
 for j = 1:m3
     for k = 1:n3
         if j==1 && k==1
@@ -36,7 +36,6 @@ for j = 1:m3
 %         qt = complex(double(N0*S(j,k)),double(L0*U(j)+M0*V(k))); % 
         qt = 1;
         qt2 = 1/exp(S(j,k)*-h);
-        qt2 = qt2/(S(j,k))^jie;
         
 %         size(qt)
         Sxx(j,k) = -U(j)/(qt/U(j))*FTMI(j,k); % The fourier transform of Sxx
